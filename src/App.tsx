@@ -1,21 +1,12 @@
-import "./App.css";
+import React from 'react';
+import TaskList from './components/TaskList';
 
-
-interface Todo  {
-    id: number,
-    task: string,
-    isCompleted: boolean,
-    createdAt: string,
-    order: number,
-}
-
-
-function App() {
-      return (
-          <div>
-            <h1>This is just the start!</h1>
-          </div>
-      );
-}
+const App: React.FC = () => {
+    return (
+        <div className="App">
+            <TaskList />
+        </div>
+    );
+};
 
 export default App;
